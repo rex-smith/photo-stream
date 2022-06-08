@@ -1,0 +1,24 @@
+<div class="hero">
+  <div class="container mt-5">
+    <%= render 'search_form' %>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-narrow">
+        <% @photos.each do |photo| %>
+          <div class="box">
+            <div class="columns is-centered">
+              <div class="column is-narrow">
+                <figure>
+                  <img src="<%= Flickr.url_n(photo) %>"/>
+                </figure>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

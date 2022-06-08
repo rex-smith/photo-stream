@@ -11,6 +11,26 @@
   </head>
 
   <body>
+    <div class="navbar is-primary">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <%= link_to image_tag('camera.png'), root_path %>
+          <%= link_to 'PHOTOSSSS', root_path, class: "is-size-2 has-text-weight-bold ml-5 is-white" %>
+        </div>
+        <div class="navbar-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <%= link_to "Home", root_path, class: "button is-primary is-light" %>
+          </div>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

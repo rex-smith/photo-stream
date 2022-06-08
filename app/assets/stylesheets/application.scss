@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ $green: #00d483;
+ $primary: $green;
+
+ @import "bulma";
+
+ img {
+   border-radius: 8px;
+   max-width: 100%;
+   height: auto;
+ }

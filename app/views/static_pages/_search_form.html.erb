@@ -1,0 +1,12 @@
+<%= form_with url: '/', method: :get do |f| %>
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="control">
+        <%= f.text_field :user_id, placeholder: "User ID", class: 'input' %>
+      </div>
+    </div>
+    <div class="control">
+      <%= f.submit "Search", class: 'button is-primary' %>
+    </div>
+  </div>
+<% end %>
